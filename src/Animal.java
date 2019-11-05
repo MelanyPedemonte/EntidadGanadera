@@ -1,18 +1,16 @@
-import java.util.*;
-
-
 
 public class Animal extends EntidadGanadera {
-	int id;
-	String raza;
-	int edad;
-	String sexo;
-	double peso;
-	boolean capado;
-	int paridos;
+private	int id;
+private	String raza;
+private	int edad;
+private	String sexo;
+private	double peso;
+private	boolean capado;
+private	int paridos;
 	
 public Animal(int id, String raza, int edad, String sexo, double peso,
-			boolean capado, int paridos) {
+			boolean capado, int paridos, Criterio criterio) {
+	    super(criterio);
 		this.id = id;
 		this.raza = raza;
 		this.edad = edad;
@@ -30,6 +28,10 @@ public void setId(int id) {
 	this.id = id;
 }
 
+public String getRaza(){
+	return (this.raza);
+}
+
 public void setRaza(String raza) {
 	this.raza = raza;
 }
@@ -42,7 +44,7 @@ public void setSexo(String sexo) {
 	this.sexo = sexo;
 }
 
-public boolean getCapado(Animal a) {
+public boolean getCapado() {
 	return this.capado;
 }
 
@@ -50,7 +52,7 @@ public void setCapado(boolean capado) {
 	this.capado = capado;
 }
 
-public int getParidos(Animal a) {
+public int getParidos() {
 	return this.paridos;
 }
 
@@ -78,15 +80,9 @@ public int getEdad(){
 	return edad;
 }
 
-public Vector<String> getRaza(){
-	Vector<String> aux= new Vector<String>();
-	    aux.add(this.raza);
-	return (aux);
-}
-
 public void llenarCamion(Camion c){
-	if (c.criterio.cumple(this)) {
-		c.camiones.add(this);
+	if (c.getCriterio().cumple(this)) {
+		c.getCamiones().add(this);
 	}
 }
 

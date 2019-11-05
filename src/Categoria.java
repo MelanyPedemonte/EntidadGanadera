@@ -1,7 +1,7 @@
 
 public class Categoria implements Criterio{
-	Criterio criterio;
-	String nombre;
+private	Criterio criterio;
+private String nombre;
 	
 public Categoria(Criterio criterio, String nombre) {
 		this.criterio = criterio;

@@ -1,7 +1,7 @@
 
 public class Or implements Criterio{
-	Criterio c1;
-	Criterio c2;
+private	Criterio c1;
+private	Criterio c2;
 	
 
 public Or(Criterio c1, Criterio c2) {

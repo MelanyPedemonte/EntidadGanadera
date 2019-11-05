@@ -1,6 +1,6 @@
 
 public class EdadMenor implements Criterio{
-	int limite;
+private	int limite;
 
 public EdadMenor(int limite) {
 		this.limite = limite;

@@ -1,6 +1,6 @@
 
 public class EdadMayor implements Criterio{
-	int limite;
+private	int limite;
 
 public EdadMayor(int limite) {
 		super();

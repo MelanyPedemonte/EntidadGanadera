@@ -3,19 +3,27 @@ import java.util.*;
 
 
 public abstract class EntidadGanadera {
-	Criterio criterio;
+private   	Criterio criterio;
 	
+public EntidadGanadera(Criterio criterio) {
+		this.criterio = criterio;
+	}
+
+public Criterio getCriterio() {
+	return criterio;
+}
+
+
+public void setCriterio(Criterio criterio) {
+	this.criterio = criterio;
+}
+
+
 public abstract int getCantidad();
 
 public abstract double getPeso();
 
 public abstract int getEdad();
-
-public abstract Vector<String> getRaza();
-
-public abstract boolean getCapado(Animal a);
-
-public abstract int getParidos(Animal a);
 
 public abstract void llenarCamion(Camion c);
 

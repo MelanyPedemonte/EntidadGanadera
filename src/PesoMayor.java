@@ -1,6 +1,6 @@
 
 public class PesoMayor implements Criterio{
-	Double limite;
+private	Double limite;
 
 public PesoMayor(Double limite) {
 		super();

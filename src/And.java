@@ -1,7 +1,7 @@
 
 public class And implements Criterio{
-	Criterio c1;
-	Criterio c2;
+private	Criterio c1;
+private	Criterio c2;
 	
 	
 public And(Criterio c1, Criterio c2) {

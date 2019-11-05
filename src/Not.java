@@ -1,6 +1,6 @@
 
 public class Not implements Criterio{
-	Criterio c;
+private	Criterio c;
 	
 public Not(Criterio c) {
 		super();

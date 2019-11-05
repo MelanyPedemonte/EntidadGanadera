@@ -1,6 +1,6 @@
 
 public class PromMayorEdad implements Criterio{
-		int limite;
+private		int limite;
 		
 	public PromMayorEdad(int limite) {
 			super();

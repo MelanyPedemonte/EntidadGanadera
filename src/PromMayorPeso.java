@@ -1,6 +1,6 @@
 
 public class PromMayorPeso implements Criterio{
-	int limite;	
+private	int limite;	
 
 public PromMayorPeso(int limite) {
 		super();

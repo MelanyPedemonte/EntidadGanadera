@@ -1,7 +1,7 @@
 
 
 public class IgualRaza implements Criterio{
-	String raza;
+private	String raza;
 	
 public IgualRaza(String raza) {
 		super();
@@ -17,7 +17,7 @@ public void setRaza(String raza) {
 }
 
 public boolean cumple(EntidadGanadera e){
-	return (e.getRaza().equals(raza));
+	return (((Animal)e).getRaza().equals(raza));
 }
 
 
