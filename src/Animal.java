@@ -1,3 +1,6 @@
+import java.util.*;
+
+
 
 public class Animal extends EntidadGanadera {
 	int id;
@@ -6,7 +9,7 @@ public class Animal extends EntidadGanadera {
 	String sexo;
 	double peso;
 	boolean capado;
-	int paridos;	
+	int paridos;
 	
 public Animal(int id, String raza, int edad, String sexo, double peso,
 			boolean capado, int paridos) {
@@ -27,10 +30,6 @@ public void setId(int id) {
 	this.id = id;
 }
 
-public String getRaza() {
-	return raza;
-}
-
 public void setRaza(String raza) {
 	this.raza = raza;
 }
@@ -43,16 +42,16 @@ public void setSexo(String sexo) {
 	this.sexo = sexo;
 }
 
-public boolean getCapado() {
-	return capado;
+public boolean getCapado(Animal a) {
+	return this.capado;
 }
 
 public void setCapado(boolean capado) {
 	this.capado = capado;
 }
 
-public int getParidos() {
-	return paridos;
+public int getParidos(Animal a) {
+	return this.paridos;
 }
 
 public void setParidos(int paridos) {
@@ -79,5 +78,20 @@ public int getEdad(){
 	return edad;
 }
 
+public Vector<String> getRaza(){
+	Vector<String> aux= new Vector<String>();
+	    aux.add(this.raza);
+	return (aux);
+}
+
+public void llenarCamion(Camion c){
+	if (c.criterio.cumple(this)) {
+		c.camiones.add(this);
+	}
+}
+
+public boolean borrar(Animal a){
+	return false;
+}
 
 }
