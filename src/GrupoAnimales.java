@@ -2,11 +2,20 @@ import java.util.*;
 
 
 public class GrupoAnimales extends EntidadGanadera {
+private String nombre;
 private	Vector<EntidadGanadera> entidadesG; 
 	
-public GrupoAnimales(Criterio criterio) {
-	super(criterio);
+public GrupoAnimales(String nombre) {
+	this.nombre= nombre;
 	entidadesG = new Vector<EntidadGanadera>();
+}
+
+public String getNombre() {
+	return nombre;
+}
+
+public void setNombre(String nombre) {
+	this.nombre = nombre;
 }
 
 public int getCantidad(){

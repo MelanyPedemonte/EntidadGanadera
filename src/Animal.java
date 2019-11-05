@@ -9,8 +9,7 @@ private	boolean capado;
 private	int paridos;
 	
 public Animal(int id, String raza, int edad, String sexo, double peso,
-			boolean capado, int paridos, Criterio criterio) {
-	    super(criterio);
+			boolean capado, int paridos) {
 		this.id = id;
 		this.raza = raza;
 		this.edad = edad;

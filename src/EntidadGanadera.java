@@ -3,21 +3,6 @@ import java.util.*;
 
 
 public abstract class EntidadGanadera {
-private   	Criterio criterio;
-	
-public EntidadGanadera(Criterio criterio) {
-		this.criterio = criterio;
-	}
-
-public Criterio getCriterio() {
-	return criterio;
-}
-
-
-public void setCriterio(Criterio criterio) {
-	this.criterio = criterio;
-}
-
 
 public abstract int getCantidad();
 
